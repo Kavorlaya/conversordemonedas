@@ -6,7 +6,7 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultaMoneda {
-    private final String API_KEY = "TU_API_KEY_AQUI";
+    private final String API_KEY = "ESCRIBA_AQUI_SU_API_KEY";
 
     public Cotizacion buscarCotizacion(String moneda_base, String moneda_cotizacion){
 
