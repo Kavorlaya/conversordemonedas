@@ -6,9 +6,11 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class ConsultaMoneda {
+    private final String API_KEY = "TU_API_KEY_AQUI";
+
     public Cotizacion buscarCotizacion(String moneda_base, String moneda_cotizacion){
 
-        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/578d1fd415c697a103d12483/pair/" +
+        URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + API_KEY +"/pair/" +
                 moneda_base + "/" + moneda_cotizacion);
 
         HttpClient client = HttpClient.newHttpClient();
