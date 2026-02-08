@@ -30,6 +30,8 @@
 ### Descripción
 Esta aplicación es un conversor de divisas dinámico desarrollado en **Java**. El sistema permite realizar conversiones precisas entre diferentes monedas internacionales (Dólares, Pesos Argentinos, Euros, Libras, etc.) utilizando datos en tiempo real para garantizar la exactitud de los cálculos.
 
+---
+
 ### Funcionamiento
 El programa opera a través de una interfaz de consola bajo el siguiente flujo:
 1. **Selección:** El usuario elige el par de divisas desde un menú interactivo.
