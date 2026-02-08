@@ -1,2 +1,48 @@
-# conversordemonedas
-Conversor de monedas hecho en Java, con cotizaciones en tiempo real vía API.
+# 🌍 Conversor de Monedas - Challenge Alura
+
+### Índice
+* [Descripción](#descripción)
+* [Funcionamiento](#funcionamiento)
+* [Configuración de la API Key](#configuración-de-la-api-key)
+* [Tecnologías Utilizadas](#tecnologías-utilizadas)
+* [Nota de Calidad (QA)](#nota-de-calidad-qa)
+
+---
+
+### Descripción
+Esta aplicación es un conversor de divisas dinámico desarrollado en **Java**. El sistema permite realizar conversiones precisas entre diferentes monedas internacionales (Dólares, Pesos Argentinos, Euros, Libras, etc.) utilizando datos en tiempo real para garantizar la exactitud de los cálculos.
+
+### Funcionamiento
+El programa opera a través de una interfaz de consola bajo el siguiente flujo:
+1. **Selección:** El usuario elige el par de divisas desde un menú interactivo.
+2. **Ingreso:** Se solicita el monto que se desea convertir.
+3. **Conexión:** El sistema consulta la tasa de cambio actual mediante una petición a **ExchangeRate-API**.
+4. **Cálculo:** Se procesa la información y se muestra el resultado final convertido de forma inmediata.
+
+---
+
+### Configuración de la API Key
+> ⚠️ **IMPORTANTE:** Por razones de seguridad y siguiendo buenas prácticas de desarrollo, este repositorio **no incluye mi clave personal** de acceso a la API.
+
+Para ejecutar este proyecto, por favor siga estos pasos:
+1. Obtenga una clave gratuita en [Exchangerate-API](https://www.exchangerate-api.com/).
+2. Localice la clase `ConsultaMoneda` en el paquete fuente.
+3. Reemplace el valor de la variable `API_KEY` con su propia clave:
+   `private final String API_KEY = "TU_API_KEY_AQUI";`
+4. Guarde los cambios y ejecute la aplicación desde su IDE (IntelliJ, Eclipse, etc.).
+
+---
+
+### Tecnologías Utilizadas
+* **Java 17+**: Lenguaje principal de desarrollo.
+* **Maven**: Gestión de dependencias y construcción del proyecto.
+* **Gson (Google)**: Biblioteca para la deserialización y manejo de datos JSON.
+* **HttpClient**: Para la gestión de peticiones asíncronas a servicios externos.
+
+---
+
+### Nota de Calidad (QA)
+Como analista de QA, he priorizado la **robustez del software** mediante:
+* **Programación Defensiva:** El sistema valida la presencia de la API Key antes de intentar la conexión.
+* **Manejo de Excepciones:** Mensajes de error claros ante fallos de red o ingresos de datos inválidos.
+* **Higiene de Código:** Separación de responsabilidades entre la lógica de conexión y la lógica de negocio.
