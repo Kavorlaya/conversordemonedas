@@ -28,7 +28,7 @@ Para ejecutar este proyecto, por favor siga estos pasos:
 1. Obtenga una clave gratuita en [Exchangerate-API](https://www.exchangerate-api.com/).
 2. Localice la clase `ConsultaMoneda` en el paquete fuente.
 3. Reemplace el valor de la variable `API_KEY` con su propia clave:
-   `private final String API_KEY = "TU_API_KEY_AQUI";`
+   `private final String API_KEY = "ESCRIBA_AQUI_SU_API_KEY";`
 4. Guarde los cambios y ejecute la aplicación desde su IDE (IntelliJ, Eclipse, etc.).
 
 ---
