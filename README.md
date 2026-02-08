@@ -60,7 +60,7 @@ Para ejecutar este proyecto, por favor siga estos pasos:
 ---
 
 ### Nota de Calidad (QA)
-Como analista de QA, he priorizado la **robustez del software** mediante:
+Como analista QA, he priorizado la **robustez del software** mediante:
 * **Programación Defensiva:** El sistema valida la presencia de la API Key antes de intentar la conexión.
 * **Manejo de Excepciones:** Mensajes de error claros ante fallos de red o ingresos de datos inválidos.
 * **Higiene de Código:** Separación de responsabilidades entre la lógica de conexión y la lógica de negocio.
