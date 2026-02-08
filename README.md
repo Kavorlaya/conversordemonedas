@@ -6,6 +6,7 @@
 * [Configuración de la API Key](#configuración-de-la-api-key)
 * [Tecnologías Utilizadas](#tecnologías-utilizadas)
 * [Nota de Calidad (QA)](#nota-de-calidad-qa)
+* [Autor](#autor)
 
 ---
 
@@ -46,3 +47,14 @@ Como analista de QA, he priorizado la **robustez del software** mediante:
 * **Programación Defensiva:** El sistema valida la presencia de la API Key antes de intentar la conexión.
 * **Manejo de Excepciones:** Mensajes de error claros ante fallos de red o ingresos de datos inválidos.
 * **Higiene de Código:** Separación de responsabilidades entre la lógica de conexión y la lógica de negocio.
+
+---
+
+### Autor
+<div align="center">
+  <a href="https://github.com/Kavorlaya">
+    <img src="https://github.com/Kavorlaya.png" width="200" alt="Foto de perfil" />
+    <br />
+    <span style="font-size:22px;"><b>Diego Nicolás Persi</b></span>
+  </a>
+</div>
