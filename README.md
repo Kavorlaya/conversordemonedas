@@ -1,6 +1,7 @@
 <div align="center">
-  <img align="center" width="512" height="512" alt="Gemini_Generated_Image_pm3k7wpm3k7wpm3k" src="https://github.com/user-attachments/assets/08c187c3-3105-4acc-8d5b-a3a548b819e6" />
+<img width="2816" height="1536" alt="Gemini_Generated_Image_ca4gdgca4gdgca4g" src="https://github.com/user-attachments/assets/fb28de93-5d76-48ea-ba72-9704de9af547" />
 </div>  
+
   
 <div align="center">
   <p>
