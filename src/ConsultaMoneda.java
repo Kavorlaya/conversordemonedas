@@ -10,6 +10,10 @@ public class ConsultaMoneda {
 
     public Cotizacion buscarCotizacion(String moneda_base, String moneda_cotizacion){
 
+        if(API_KEY.contains("ESCRIBA_AQUI_SU_API_KEY")){
+            throw new RuntimeException("Error: API Key no configurada (por seguridad no se incluye en el repositorio público)");
+        }
+
         URI direccion = URI.create("https://v6.exchangerate-api.com/v6/" + API_KEY +"/pair/" +
                 moneda_base + "/" + moneda_cotizacion);
 
@@ -17,12 +21,15 @@ public class ConsultaMoneda {
         HttpRequest request = HttpRequest.newBuilder().uri(direccion).build();
 
         try {
-            HttpResponse<String> response = null;
-            response = client
+            HttpResponse<String> response = response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
+            if (response.statusCode() == 403 || response.statusCode() == 404) {
+                throw new RuntimeException("Error: La API key no es válida o fué revocada");
+            }
+
             return new Gson().fromJson(response.body(), Cotizacion.class);
         } catch (Exception e) {
-            throw new RuntimeException("No se encontró ese par para conversión.");
+            throw new RuntimeException("No se pudo conectar con el servicio de cotización: " + e.getMessage());
         }
 
     }
